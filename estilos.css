@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+.contenedor {
+  max-width:1000px;
+  margin:0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+h1, h2 {
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+}
+div.contenido {
+  width: 60%;
+  margin: 30px auto 0 auto;
+  font-size: 24px;
+}
+div.campo {
+  margin-bottom: 10px;
+}
+
+label {
+  font-family: geneva;
+  display: block;
+  font-size: 16px;
+}
+input{
+  height: 30px;
+}
