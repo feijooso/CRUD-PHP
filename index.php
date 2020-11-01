@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Directorio Legislativo</title>
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="estilos.css" media="screen" title="no title">
   </head>
   <body>
