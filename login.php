@@ -6,10 +6,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <title>Login</title>
 </head>
+<style type="text/css">
+    body {
+        color: red;
+    }
+    .wrapper{ 
+        width: 350px;
+        padding: 20px; 
+        color: black;
+    }
+    </style>
 <body>
 
-    <h1>Registrarse</h1>
-    <p>Completa para ingresar</p>
+
 
     <?php
 
@@ -39,6 +48,11 @@
 
     ?>
 
+<div class="wrapper">
+
+    <h1>Registrarse</h1>
+    <p>Completa tus datos para ingresar</p>
+
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="form-group">
             <label>Username</label>
@@ -54,6 +68,7 @@
             <input type="submit" class="btn btn-primary" value="Login">
         </div>
     </form>
+</div>
 
     
 </body>

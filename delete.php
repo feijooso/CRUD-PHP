@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <h1>Borrar</h1>
 
     <?php
@@ -14,6 +15,15 @@
         $stmt->bind_param("i",$_GET["id"]);
         $stmt->execute();
     ?>
+    <p>
+        Se ha borrado el legislador
+    </p>
+
+    <a href="get.php" role="button">Volver</a>
+    
+    </div>
+
+
     
 </body>
 </html>

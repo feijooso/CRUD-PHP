@@ -15,15 +15,11 @@
         $resultado = $_POST; 
 
         $error = FALSE;
-        echo $error;
-        echo "<br>";
 
         //Nombre
         if(empty($resultado['nombre']) || is_numeric($resultado['nombre'])) {
           echo "Nombre invalido";
           $error += TRUE;
-          echo $error;
-          echo "<br>";
         }
 
 
@@ -31,16 +27,12 @@
         if(empty($resultado['apellido']) || is_numeric($resultado['nombre'])) {
           echo "Apellido invalido";
           $error += TRUE;
-          echo $error;
-          echo "<br>";
         }
 
         //Mail
         if(empty($resultado['mail'])) {
           echo "Mail invalido";
           $error += TRUE;
-          echo $error;
-          echo "<br>";
         }
 
         //Telefono
@@ -55,16 +47,12 @@
         if(empty($resultado['pais']) || is_numeric($resultado['nombre'])) {
           echo "Pais invalido";
           $error += TRUE;
-          echo $error;
-          echo "<br>";
         }
 
         //Votos
         if(empty($resultado['votos']) || !is_numeric($resultado['telefono'])) {
           echo "Cantidad de votos invalida";
           $error += TRUE;
-          echo $error;
-          echo "<br>";
         }
 
         //Partido
@@ -75,7 +63,6 @@
           $automatico = 1;
         } else {
           $partido = $resultado['partido'];
-          echo $partido;
         }
 
         //Fecha mandato
@@ -92,10 +79,6 @@
         }
 
       ?>
-
-      <pre>
-        <?php var_dump($_POST); ?>
-      </pre>
  
       <?php
       
@@ -111,7 +94,7 @@
             $conn->close();
             echo "Carga exitosa";
         } catch (\Exception $e) {
-            echo $e->getMessage();
+           echo $e->getMessage();
           }
       }
         
