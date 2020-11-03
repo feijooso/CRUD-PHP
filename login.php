@@ -31,14 +31,10 @@
                     header("location: get.php");
                 }
                 else {
-                    echo "maaaaaal";
-                    echo $password_valida;
-                    echo $password_ingresado;
+                    echo "password incorrecta";
                 }
             } 
         }
-
-        
 
 
     ?>
