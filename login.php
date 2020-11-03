@@ -16,23 +16,29 @@
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             $user_ingresado = $_POST["user"];
             $password_ingresado =  $_POST["password"];
+
+            require_once('bd_conection.php');
+            $stmt = $conn->prepare ("SELECT password FROM users WHERE user = ?");
+            $stmt->bind_param("s",$user_ingresado);
+            $stmt->execute();
+            $stmt->store_result();
+            
+
+            if($stmt->num_rows == 1) {
+                $stmt->bind_result($password_valida);
+                $stmt->fetch();
+                if ($password_ingresado == $password_valida){
+                    header("location: get.php");
+                }
+                else {
+                    echo "maaaaaal";
+                    echo $password_valida;
+                    echo $password_ingresado;
+                }
+            } 
         }
 
-        require_once('bd_conection.php');
-        $stmt = $conn->prepare ("SELECT * FROM users WHERE user = ?");
-        $stmt->bind_param("s",$user);
-        $stmt->execute();
-        $stmt->store_result();
-/* 
-        if($stmt->num_rows == 1) {
-            $stmt->bind_result($user, $password_valida);
-            if ($password_ingresado == $password_valida){
-                header("location: get.php");
-            }
-            else {
-                echo "maaaaaal";
-            }
-        } */
+        
 
 
     ?>
