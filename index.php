@@ -9,7 +9,7 @@
   <body>
 
     <div class="contenedor">
-      <h1>Formulario</h1>
+      <h1>Agregar lesislador</h1>
 
         <div class="contenido">
 
@@ -60,7 +60,6 @@
                   </div>
                   
                   <div class="campo">
-                      <h5> Partido </h5>
                       <select name="partido" value='-Any-'>
                         <option value= "">--Elegir partido--</option>
                         <option value="rojo">Rojo</option>
@@ -84,25 +83,17 @@
                       <input type="submit">
                   </div>
 
-
-
           </div> 
 
           </form>
 
-
         </div>
 
         <div>
-            <h2>Ver todos</h2>
+            <h1>Ver legisladores</h1>
 
-            <a href="get.php" role="button">Ver Legisladores</a>
+            <a href="login.php" role="button">Ver Legisladores</a>
 
-        </div>
-
-        <div>
-            <h2>Borrar</h2>
-            <a href="delete.php" role="button">Borrar Legisladores</a>
         </div>
 
 

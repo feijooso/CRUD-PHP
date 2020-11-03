@@ -8,9 +8,12 @@
 <body>
     <h1>Borrar</h1>
 
-    <div class="contenedor">
-        
-    </div>
+    <?php
+        require_once('bd_conection.php');
+        $stmt = $conn->prepare("DELETE FROM legisladores WHERE id = ?");
+        $stmt->bind_param("i",$_GET["id"]);
+        $stmt->execute();
+    ?>
     
 </body>
 </html>
