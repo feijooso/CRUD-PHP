@@ -1,0 +1,46 @@
+CREATE DATABASE legisladores`;
+
+CREATE TABLE `users` (
+ `user` varchar(30) NOT NULL,
+ `password` varchar(30) NOT NULL,
+ PRIMARY KEY (`user`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+CREATE TABLE `legisladores` (
+ `id` int(30) NOT NULL AUTO_INCREMENT,
+ `Nombre` varchar(20) NOT NULL,
+ `Apellido` varchar(20) NOT NULL,
+ `Mail` varchar(30) NOT NULL,
+ `Telefono` int(20) NOT NULL,
+ `Direccion` varchar(30) NOT NULL,
+ `Pais` varchar(30) NOT NULL,
+ `Votos` int(20) NOT NULL,
+ `Partido` varchar(30) NOT NULL,
+ `Inicio_mandato` varchar(30) NOT NULL,
+ `Fin_mandato` varchar(30) NOT NULL,
+ `Automatico` tinyint(1) NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4
+
+INSERT INTO `users`(`user`, `password`) VALUES (admin,admin);
+
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Sofia', 'Feijoo', 'sofeijoo@gmail.com',1123869502, 'Callao', 'Argentina',29, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Juan', 'Perez', 'juan@gmail.com',1169502563, 'Viamonte', 'Argentina',97, 'verde', '2019-08-09', '2020-08-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Pedro', 'Lopez', 'pedrito@gmail.com',1123869502, 'Cordoba', 'Argentina',2, 'verde', '2019-01-09', '2020-01-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Juana', 'Feijo', 'jfeijo@gmail.com',1123869502, 'Justo', 'Argentina',78, 'verde', '2020-07-09', '2021-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Salome', 'Linares', 'salo@gmail.com',1123869502, 'Piedras', 'Argentina',6, 'rojo', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Abril', 'Anges', 'aabril@gmail.com',1123869502, 'Callao', 'Argentina',98, 'azul', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Jose', 'Planta', 'joseplanta@gmail.com',1123869502, 'Callao', 'Argentina',112, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Liliana', 'Piedras', 'lili@gmail.com',1123869502, 'Juncal', 'Argentina',5, 'azul', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Lourdes', 'Lose', 'll@gmail.com',1123869502, 'Junin', 'Argentina',78, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Christian', 'Kurmi', 'chrisk@gmail.com',1123869502, 'CABA', 'Argentina',90, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Ariel', 'Joski', 'ajoski@gmail.com',1123869502, 'Martinez', 'Argentina',23, 'rojo', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Lucia', 'Lezcano', 'lule@gmail.com',1123869502, 'CABA', 'Argentina',100, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Ana', 'Murga', 'anamu@gmail.com',1123869502, 'Juan B Justo', 'Argentina',89, 'rojo', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Tomas', 'Binda', 'tomas@gmail.com',1123869502, 'Santa fe', 'Argentina',29, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Miguel', 'Vezquez', 'miguelv@gmail.com',1123869502, 'Callao', 'Argentina',44, 'azul', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Susana', 'Lopes', 'susani@gmail.com',1123869502, '9 de Julio', 'Argentina',87, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Martin', 'Escobar', 'martinescobar@gmail.com',1123869502, 'Callao', 'Argentina',99, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Viviana', 'Frisa', 'vivif@gmail.com',1123869502, 'Callao', 'Argentina',12, 'azul', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Juan Jose', 'Ledesma', 'juanjo@gmail.com',1123869502, 'Callao', 'Argentina',54, 'verde', '2019-07-09', '2020-07-09',0);
+INSERT INTO legisladores(Nombre, Apellido, Mail, Telefono, Direccion, Pais, Votos, Partido, Inicio_mandato, Fin_mandato, Automatico) VALUES ('Matias', 'Lumpis', 'malu@gmail.com',1123869502, 'Callao', 'Argentina',22, 'verde', '2019-07-09', '2020-07-09',0);
